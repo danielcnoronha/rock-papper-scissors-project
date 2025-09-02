@@ -29,20 +29,23 @@ function getHumanChoice (){
     let humanChoice = prompt("Rock,papper,scissors?");
 
     if (humanChoice === "rock"){
-        return("You chose rock!")
+        return("rock")
     }
     else if (humanChoice === "papper"){
-        return("You chose papper!")
+        return("papper")
     }
     else if (humanChoice === "scissors"){
-        return("You chose scissors!")
+        return("scissors")
     }
     else {
         return("You made a typo")
     };
 }
-
 console.log(getHumanChoice())
+
+let humanScore = 0
+
+let computerScore = 0
 
 
 

@@ -1,11 +1,11 @@
 function getComputerChoice () {
-    let computerChoice = Math.floor(Math.random()* 3); 
+    let computerOptions = Math.floor(Math.random()* 3); 
 
 
-    if (computerChoice <1 ){
+    if (computerOptions <1 ){
        return("rock")
     }
-    else if (computerChoice == 1) {
+    else if (computerOptions == 1) {
         return("papper")
     }
     else {
@@ -26,15 +26,15 @@ console.log(getComputerChoice())
 
 function getHumanChoice (){
 
-    let humanChoice = prompt("Rock,papper,scissors?");
+    let humanOptions = prompt("Rock,papper,scissors?");
 
-    if (humanChoice === "rock"){
+    if (humanOptions === "rock"){
         return("rock")
     }
-    else if (humanChoice === "papper"){
+    else if (humanOptions === "papper"){
         return("papper")
     }
-    else if (humanChoice === "scissors"){
+    else if (humanOptions === "scissors"){
         return("scissors")
     }
     else {
@@ -47,5 +47,13 @@ let humanScore = 0
 
 let computerScore = 0
 
+/* create a function that takes the human and computer player choices as arguments 
+plays a single round
+increments the variable of the ronds winner 
+logs a winner announcement*/
 
+function playRound (){
+    let humanOptions
+    let computerOptions
+}
 
